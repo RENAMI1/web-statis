@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Multimedia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Web Dinamis dengan Multimedia</h1>
+
+    <!-- Upload gambar -->
+    <input type="file" id="imageUpload" accept="image/*">
+    <button onclick="uploadImage()">Upload Gambar</button>
+    <img id="previewImage" src="" alt="Preview" style="display:none; width:200px;">
+
+    <!-- Audio -->
+    <audio controls>
+        <source src="assets/audio/sample.mp3" type="audio/mp3">
+        Browser Anda tidak mendukung elemen audio.
+    </audio>
+
+    <!-- Video -->
+    <video controls width="320">
+        <source src="assets/video/sample.mp4" type="video/mp4">
+        Browser Anda tidak mendukung elemen video.
+    </video>
+
+    <script src="script.js"></script>
+</body>
+</html>
